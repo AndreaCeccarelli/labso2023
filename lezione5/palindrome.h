@@ -1,0 +1,2 @@
+int palindrome ( char * ); /*prototipo*/
+
