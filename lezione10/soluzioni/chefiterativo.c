@@ -33,8 +33,7 @@ int main (void) {
   listen (serverFd, 5); /* Maximum pending connection length */
  while (1) {/* Loop forever */ /* Accept a client connection */
    clientFd = accept (serverFd, clientSockAddrPtr, &clientLen);
-  sleep(30);
-  writeRecipe (clientFd); /* Send the recipe */
+   writeRecipe (clientFd); /* Send the recipe */
    close(clientFd);
   }
 }
