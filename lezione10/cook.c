@@ -35,9 +35,7 @@ int main (void) {
 	sleep (1); /* Wait and then try again */
   }
  } while (result == -1);
-	printf("reaching the sleep\n");
-	sleep(20);
-    readRecipe (clientFd); /* Read the recipe */
+ readRecipe (clientFd); /* Read the recipe */
  close (clientFd); /* Close the socket */
  exit (/* EXIT_SUCCESS */ 0); /* Done */
 }
