@@ -21,7 +21,7 @@ int main(void) {
     len = strlen(remote.sun_path) + sizeof(remote.sun_family);
 
     if (connect(s, (struct sockaddr *)&remote, len) == -1) {
-        perror("connect");
+        perror("connection error");
         exit(1);
     }
 
