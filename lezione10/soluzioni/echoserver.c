@@ -16,7 +16,7 @@ int main(void) {
     }
     local.sun_family = AF_UNIX;
     strcpy(local.sun_path, SOCK_PATH);
-    unlink(local.sun_path);
+    unlink(&SOCK_PATH);
     len = strlen(local.sun_path) + sizeof(local.sun_family);
     if (bind(s, (struct sockaddr *)&local, len) == -1) {
         perror("bind");
