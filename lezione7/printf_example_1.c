@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 
   printf("Inserisci un numero:");
   scanf("%d", &result);
-  printf("%d +", result); //con /n oppure fflush(stdout) si ottiene un risultato, senza invece la printf si porta dietro il buffer nel figlio
+  printf("%d +", result); //provare con /n oppure fflush(stdout); cosa cambia, e perche'?
 
   int son = fork();
   if (son < 0) {
