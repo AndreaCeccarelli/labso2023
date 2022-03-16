@@ -3,7 +3,7 @@ void scambia(int *,int *);
 main( )
 {
  int x, y;
- printf ("\n Dammi due interi decimali");
+ printf ("\n Dammi due interi decimali\n");
  scanf("%d %d",&x,&y);
  printf("%d%d",x,y);
  scambia(&x,&y);
