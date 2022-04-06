@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <wait.h>
 int main() {
-  printf("test"); //--> provare con o senza /n; provare con una print nel figlio.
+  printf("test"); //--> provare con o senza \n; provare con una print nel figlio.
   int son = fork();
   if (son < 0) {
     exit(EXIT_FAILURE);
