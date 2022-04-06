@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 
   printf("Inserisci un numero:");
   scanf("%d", &result);
-  printf("%d +", result); //provare con /n oppure fflush(stdout); cosa cambia, e perche'?
+  printf("%d +", result); //provare con \n oppure fflush(stdout); cosa cambia, e perche'?
 
   int son = fork();
   if (son < 0) {
