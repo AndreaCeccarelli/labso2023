@@ -1,4 +1,6 @@
-lseek */
+#include <errno.h> /* perror */
+#include <unistd.h> /* write, lseek, close, exit */
+#include <sys/types.h> /*open, lseek */
 #include <sys/stat.h> /*open */
 #include <fcntl.h> /*open*/
 
