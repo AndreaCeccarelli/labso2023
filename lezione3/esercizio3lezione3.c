@@ -10,12 +10,9 @@ main( )
  printf("%d%d",x,y);
 }
 
- void scambia(int *a, int *b)
+ void scambia(?????)
 {
- int z;
- z=*a;
- *a=*b;
- *b=z;
- printf("%d%d",*a,*b);
+# scambia i valori
+  printf("%d%d",*a,*b);
 }
 
